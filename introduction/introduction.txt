@@ -17,3 +17,8 @@
 
 ## "What are neural networks?"
 According to Wikipedia -- "A neural network is a network or circuit of neurons, or in modern sense, an ANN composed of artificial neurons or nodes.
+
+Neural networks generally consists of:
+Input layer
+Hidden layer
+Output layer
