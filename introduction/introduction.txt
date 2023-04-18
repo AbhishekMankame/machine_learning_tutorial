@@ -22,3 +22,9 @@ Neural networks generally consists of:
 Input layer
 Hidden layer
 Output layer
+
+## Neural network flow
+Inputs --> Numerical Encoding -->
+
+Note: 
+Neumerical Encoding --> before data gets used with a neural network, it needs to be turned into numbers.
