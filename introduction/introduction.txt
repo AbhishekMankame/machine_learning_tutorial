@@ -1,1 +1,8 @@
 ## machine learning and deep learning
+
+### some of the common machine learning algorithms
+--> Random forest
+--> Naive Bayes
+--> Nearest neighbour
+--> Support Vector Machine(SVM)
+--> and many more.....
