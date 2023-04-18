@@ -6,3 +6,11 @@
 --> Nearest neighbour
 --> Support Vector Machine(SVM)
 --> and many more.....
+
+## some of the common deep learning algorithms
+--> Neural networks
+--> Fully connected neural network
+--> Convolutional neural network
+--> Recurrent neural network
+--> Transformer
+--> and many more.....
