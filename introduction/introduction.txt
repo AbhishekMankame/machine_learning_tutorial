@@ -24,7 +24,7 @@ Hidden layer
 Output layer
 
 ## Neural network flow
-Inputs --> Numerical Encoding --> Learns representation(patterns/features/weights)
+Inputs --> Numerical Encoding --> Learns representation(patterns/features/weights) --> representationoutputs
 
 Note: 
 Neumerical Encoding --> before data gets used with a neural network, it needs to be turned into numbers.
