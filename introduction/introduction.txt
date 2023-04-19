@@ -35,3 +35,10 @@ Supervised learning
 Semi-supervised learning
 Unsupervised learning
 Transfer learning
+
+## Deep Learning use cases
+Recommendation
+Translation
+Computer Vision
+Speech Recognition
+Natural Language Processing(NLP)
