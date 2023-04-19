@@ -45,3 +45,5 @@ Natural Language Processing(NLP)
 
 
 # What is Tensorflow?
+--> End-to-end platform for machine learning
+--> Write fast deep learning code in Python/other accessible languages (able to run on a GPU/TPU)
