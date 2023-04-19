@@ -55,3 +55,7 @@ Natural Language Processing(NLP)
 --> Easy model building
 --> Robust ML production anywhere
 --> Powerful experimentation for research
+
+## NOTE:
+
+With tools like Colab, Keras, and Tensorflow, virtually anyone can solve in a day, with no initial investment, problems that would have required an engineering team working for a quarter and $20k in hardware in 2014
