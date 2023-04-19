@@ -29,3 +29,9 @@ Inputs --> Numerical Encoding --> Learns representation(patterns/features/weight
 Note: 
 Neumerical Encoding --> before data gets used with a neural network, it needs to be turned into numbers.
 Learns representation --> choose the appropriate neural network for your problem
+
+## Types of learing:
+Supervised learning
+Semi-supervised learning
+Unsupervised learning
+Transfer learning
