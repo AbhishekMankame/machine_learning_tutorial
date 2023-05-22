@@ -3,5 +3,6 @@
   <li>Python functions and codes</li>
   <li>Machine Learning libraries and codes</li>
 <li>Deep Learning and Neural Network programs</li>
+  <li>Basic machine learning codes</li>
 </ul>
 
