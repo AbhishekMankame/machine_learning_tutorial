@@ -1,0 +1,9 @@
+Program: A program is a sequence of instructions written in programming language. Eg: Python, C++
+Eg: Google Chrome --> .exe file - sequence of instructions that how the browser should work
+
+Process: A process is simply an instance of a program that is being executed
+- Every process will have a seperate memory space
+- As it as seperate memory space so, one process cannot corrupt another process
+
+Thread: A thread is a unit of execution within a process.
+Single threaded process: There will be single thread. This thread will have it's own stack and register, but it will be sharing it's code segment, data segment and heap from the process itself.
