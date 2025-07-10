@@ -7,3 +7,5 @@ Process: A process is simply an instance of a program that is being executed
 
 Thread: A thread is a unit of execution within a process.
 Single threaded process: There will be single thread. This thread will have it's own stack and register, but it will be sharing it's code segment, data segment and heap from the process itself.
+
+Multithreaded process: Here we will be having multiple threads.
