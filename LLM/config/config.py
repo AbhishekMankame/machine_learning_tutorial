@@ -1,0 +1,11 @@
+block_size = 128
+batch_size = 64
+n_embed = 128
+n_head = 4
+n_layer = 4
+dropout = 0.1
+learning_rate = 1e-3
+max_iters = 5000
+eval_interval = 100
+eval_iters = 200
+device = 'cuda'
