@@ -6,6 +6,6 @@ Here we will explore:
   <li>Machine Learning libraries and code snippet</li>
 <li>Deep Learning and Neural Network program and concept</li>
   <li>Basic to advance machine learning topics</li>
-  <li>Gen AI and LLM aswell</li>
+  <li>Gen AI and LLM</li>
 </ul>
 
