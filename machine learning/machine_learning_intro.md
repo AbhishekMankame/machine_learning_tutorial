@@ -167,3 +167,12 @@ Use cases:
 - Sentiment analysis<br>
 
 Key point: Fast and works surprisingly well despite its assumptions.
+
+## How to think about these algorithms
+- Linear Regression --> predict numbers
+- Logistic Regression --> predict categories
+- Decision Trees --> rule-based decisions
+- Random Forest --> many trees combined
+- SVM --> best separating boundary
+- K-Means --> grouping data
+- Naive Bayes --> probability-based prediction
