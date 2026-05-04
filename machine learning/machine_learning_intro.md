@@ -110,3 +110,33 @@ Use cases:
 - Recommendation systems<br>
 
 Key point: More accurate than single tree, less overfitting.
+
+### Supper Vector Machine (SVM)
+A supervised algorithm that finds the best boundary (hyperplane) to separate classes.<br>
+
+Idea:
+- Maximize the margin between classes
+- Uses support vectors (critical data points)<br>
+
+Advanced concept:
+- Uses Kernel Trick to handle non-linear data<br>
+
+Use cases:
+- Image classification
+- Text classification<br>
+
+Key point: Powerful but slower on large datasets.
+
+### K-Means Clustering
+An unsupervised algorithm that groups data into K clusters. <br>
+
+Idea:
+- Choose K (number of clusters)
+- Assign points to nearest cluster center
+- Update centers repeatedly<br>
+
+How it works:
+- Customer segmentation
+- Image compression<br>
+
+Key point: Simple but requires choosing K correctly.
