@@ -45,3 +45,33 @@ Types:
         - Value-Based (e.g., Q-learning)
         - Policy-Based
         - Actor-Critic methods
+
+
+### Linear Regression
+A supervised learning algorithm used to predict a continuous value bu fitting a straight line (or hyperplane) through the data.<br>
+Idea: It finds the best line: y=mx+c<br>
+Intution:
+- It tries to minimize the difference between predicted and actual values
+- This difference is called error
+- Uses a method called Gradient Descent to reduce error<br>
+
+Use cases:
+- House price prediction
+- Sales forecasting<br>
+
+Key point:
+Simple, fast but struggles with complex/non-linear data
+
+### Logistic Regression
+A supervised learning algorithm used for classification problems (despite the name "regression").<br>
+Idea: Instead of predicting numbers, it predicts probability using the Sigmoid Function. 0 <= P(y) <= 1<br>
+
+How it works:
+- Output is converted into probability
+- If probability > 0.5 --> Class 1, else Class 0<br>
+
+Use cases:
+- Spam detection
+- Disease prediction<br>
+
+Key point: Works well for binary classification, not ideal for very complex boundaries.
