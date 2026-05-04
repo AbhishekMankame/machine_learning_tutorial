@@ -75,3 +75,38 @@ Use cases:
 - Disease prediction<br>
 
 Key point: Works well for binary classification, not ideal for very complex boundaries.
+
+### Decision Tree
+A supervised learning algorithm that splits data into branches like a tree to make decisions.<br>
+
+Idea:
+- Ask a series of questions:
+    - "Is age > 30?"
+    - "Is income high?"
+- Each answer leads to a branch<br>
+
+How it works:
+- Splits data based on best feature
+- Uses concepts like: Entropy, Information Gain<br>
+
+Use cases:
+- Loan approval
+- Customer segmenation<br>
+
+Key point: Easy to understand but can overfit easily.
+
+
+### Random Forest
+An ensemble algorithm that combines multiple decision trees to improve accuracy.<br>
+
+Idea: "Many weak models -> one strong model"<br>
+
+How it works:
+- Builds many trees using random subsets of data
+- Final output = majority vote (classification) on average (regression)<br>
+
+Use cases:
+- Fraud detection
+- Recommendation systems<br>
+
+Key point: More accurate than single tree, less overfitting.
