@@ -140,3 +140,30 @@ How it works:
 - Image compression<br>
 
 Key point: Simple but requires choosing K correctly.
+
+### K-Nearest Neighbours (KNN)
+A supervised algorithm that classifies data based on the nearest neighbors.<br>
+
+Idea:
+- Look at K closest points
+- Majority class = prediction<br>
+
+How it works: Distance-based (Euclidean distance commonly)<br>
+
+Use cases:
+- Recommendation systems
+- Pattern recognition<br>
+
+Key point: Very simple but slow with large datasets.
+
+### Naive Bayes
+A probabilistic classifier based on Baye's Theorem.<br>
+
+Idea: Assumes features are independent (naive assumption)<br>
+Formula: P(A|B) = P(B|A)P(A)/P(B)<br>
+
+Use cases:
+- Spam filtering
+- Sentiment analysis<br>
+
+Key point: Fast and works surprisingly well despite its assumptions.
