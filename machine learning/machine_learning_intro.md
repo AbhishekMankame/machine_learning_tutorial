@@ -26,3 +26,22 @@ Types:
 3. Dimensionality Reduction
 - Reduce number of features while preserving important information
 - Example: Data visualization, noise reduction
+
+3. Reinforcement Learning (RL)
+Defintion: Reinforcement learning is a type of learning where an agent interacts with an environment and learns by receiving rewards or penalties based on its actions.<br>
+Goal: Learning a stratergy (policy) that maximizes cumulative reward over time.<br>
+Key Components:
+- Agent (learner/decision maker)
+- Environment (where agent operates)
+- Actions (choices made)
+- Rewards (feedback signal)
+
+Types:
+- Model-Based RL
+    - Agent builds a model of the environment before acting
+- Model-Free RL
+    - Learns directly from experience without building a model
+    - Further divide into:
+        - Value-Based (e.g., Q-learning)
+        - Policy-Based
+        - Actor-Critic methods
