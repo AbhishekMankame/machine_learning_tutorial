@@ -39,3 +39,9 @@ The system first searches external sources for relevant information based on the
 4. Domain Specific Knowledge: Generic models may lack expertise in specialized fields. It integrates domain specific external knowledge for tailored and precise responses.
 5. Cost and Efficiency: Fine tuning large models for specific tasks is expensive. It eliminates the need for retraining by dynamically retrieving relevant data reducing costs and computational load.
 6. Scalability Across Domains: It is adaptable to diverse industries from healthcare to finance without extensive retraining making it highly scalable.
+
+### Challanges
+1. Complexity: Combining retrieval and generation adds complexity to the model requires careful tuning and optimization to ensure both components work seamlessly together.
+2. Latency: The retrieval step can introduce latency making it challenging to deploy RAG models in real time applications.
+3. Quality of Retrieval: The overall performance heavily depends on the quality of the retrieved documents. Poor retrieval can lead to suboptimal generation, undermining the model's effectiveness.
+4. Bias and Fairness: It can inherit biases present in the training data or retrieved documents, necessitating ongoing efforts to ensure fairness and mitigate biases.
