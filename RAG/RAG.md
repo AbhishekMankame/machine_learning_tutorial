@@ -22,3 +22,12 @@ The main components of RAG are:
 7. Prompt Augmentation Layer: Combines retrieved chunks with the user's query to provide context to the LLM.
 8. LLM (Generator): Generates a grounded response using both the query and retrieved knowledge.
 9. Updater (Optional): Regularly refreshes and re-embeds data to keep the knowledge base up to date.
+
+### Working of RAG
+The system first searches external sources for relevant information based on the user's query instead of relying only on external training data.
+
+1. Creating External Data: External data from APIs, databases or documents is chunked, converted into embeddings and stored in a vector database to build a knowledge library.
+2. Retrieving Relevant Information: User queries are converted into vectors and matched against stored embeddings to fetch the most relevatnt data ensuring accurate responses.
+3. Augmenting the LLM Prompt: Retrieved context is added to the user's query giving the LLM extra context to work with.
+4. Answer Generation: LLM uses both the query and retrieved data to generate a factually accurate, context aware response.
+5. Keeping Data Updated: External data and embeddings are refreshed regularly in real time or scheduled so the system always retrieves latest information.
