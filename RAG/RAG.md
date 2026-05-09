@@ -52,3 +52,6 @@ The system first searches external sources for relevant information based on the
 3. Conversational Agents and Chatbots: It enhances chatbots by grounding their responses in reliable data making interactions more informative and personalized.
 4. Information Retrieval: Goes beyond traditional search by retrieving documents and generating meaningful summaries of their content.
 5. Educational Tools and Resources: Provides students with explanations, diagrams or multimedia references tailored to their queries.
+
+### RAG Alternatives
+Different methods can be used to generate AI outputs and each serves a unique purpose. The choice depends on what you want to achieve with your model.
