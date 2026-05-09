@@ -10,3 +10,15 @@ Retrieving relevant data and generating accurate, context-aware responses to imp
 1. Retrieve - Find useful information
 2. Augment - Add it to the AI's konwldge
 3. Generate - Create a better response
+
+### Components of RAG
+The main components of RAG are:
+1. External Knowledge Source: Stores domain specific or general information like documents, APIs or databases.
+2. Text Chunking and Preprocessing: Breaks large text into smaller, manageable chunks and cleans it for consistency.
+3. Embedding Model: Converts text into numerical vectors that captures semantic meaning.
+4. Vector Database: Stores embeddings and enables similarity search for fast information retrieval.
+5. Query Encoder: Transforms the user's query into a vector for comparison with stored embeddings.
+6. Retriever: Finds and returns the most relevant chunks from the database based on query similarity.
+7. Prompt Augmentation Layer: Combines retrieved chunks with the user's query to provide context to the LLM.
+8. LLM (Generator): Generates a grounded response using both the query and retrieved knowledge.
+9. Updater (Optional): Regularly refreshes and re-embeds data to keep the knowledge base up to date.
