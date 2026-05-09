@@ -55,3 +55,10 @@ The system first searches external sources for relevant information based on the
 
 ### RAG Alternatives
 Different methods can be used to generate AI outputs and each serves a unique purpose. The choice depends on what you want to achieve with your model.
+
+| Method | Description | When to Use |
+| ------ | ----------- | ----------- |
+| Prompt Engineering | Adjusts the input prompt to guide model behavior without changing its training | When you need a quick and simple solution for speific tasks or queries |
+| Retrieval-Augmented Generation (RAG) | Combines retrieval and generation to use external data for more factual and context-aware responses. | When you want the model's responses to include real-time, relevant information from external sources. |
+| Fine-Tuning | Retrains the model for smaller, domain-speific dataset. | When you need better performance on a particular topic or industry data. |
+| Pre-training | Trains the model from scratch using a large and diverse dataset. | When you want to build a strong foundation for later customization and adaptation. |
