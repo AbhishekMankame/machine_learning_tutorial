@@ -31,3 +31,11 @@ The system first searches external sources for relevant information based on the
 3. Augmenting the LLM Prompt: Retrieved context is added to the user's query giving the LLM extra context to work with.
 4. Answer Generation: LLM uses both the query and retrieved data to generate a factually accurate, context aware response.
 5. Keeping Data Updated: External data and embeddings are refreshed regularly in real time or scheduled so the system always retrieves latest information.
+
+### What Problems does RAG solve
+1. Hallucinations: Traditional generative models can produce incorrect information. RAG reduces this risk by retrieved verified, external data to ground responses in factual knowledge.
+2. Outdated Information: Static models rely on training data that may become outdated. It dynamically retrieves latest information ensuring relevance and accuracy in real time.
+3. Contextual Relevance: Generative models often struggle with maintaining context in complex or multiturn conversations. RAG retrieves relevant documents to enrich the context improving coherence and relevance.
+4. Domain Specific Knowledge: Generic models may lack expertise in specialized fields. It integrates domain specific external knowledge for tailored and precise responses.
+5. Cost and Efficiency: Fine tuning large models for specific tasks is expensive. It eliminates the need for retraining by dynamically retrieving relevant data reducing costs and computational load.
+6. Scalability Across Domains: It is adaptable to diverse industries from healthcare to finance without extensive retraining making it highly scalable.
