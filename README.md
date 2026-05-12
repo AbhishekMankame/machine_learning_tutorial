@@ -1,5 +1,4 @@
 # machine_learning_tutorial
-
 Here we will explore:
 <ul>
   <li>Machine Learning codes and algorithms</li>
