@@ -1,0 +1,7 @@
+## What is RAG?
+Retrieval-Augmented Generation (RAG) is a powerful framework that integrates retrieval into the sequence generation process. Essentially, RAG operates by fetching relevant documents or data snippets based on a query and then using this retrieved information to generate a coherent and contextually appropriate response.
+This method is particularly valuable in fields like chatbot development, where the ability to provide precise answers derived from extensive databases of knowledge is crucial.
+
+RAG fundamentally enhances the natural language understanding and generation capabilites of models by allowing them to access and leverage a vast amount of external knowledge.
+The approach is built upon the synergy between two main components: a retrieval system and a generative model. 
+The retrieval system first identifies relevant information from a knowledge base, which the generative model then uses to craft responses that are not only accurate but also rich in detail and scope.
