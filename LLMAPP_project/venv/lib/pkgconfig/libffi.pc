@@ -1,0 +1,11 @@
+prefix=/workspaces/machine_learning_tutorial/LLMAPP_project/venv
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+toolexeclibdir=${libdir}
+includedir=/workspaces/machine_learning_tutorial/LLMAPP_project/venv/include
+
+Name: libffi
+Description: Library supporting Foreign Function Interfaces
+Version: 3.5.2
+Libs: -L${toolexeclibdir} -lffi
+Cflags: -I${includedir}
