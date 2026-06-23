@@ -88,3 +88,30 @@ In this code we have defined an asynchronous function that performs an HTTP requ
 - data[:100] ensure that only first 100 characters are printed.
 
 ### Note: Ensures that "aiohttp" library is installed on your system before running the code. If it's not installed, you can add it by running "pip install aiohttp" command in the terminal.
+
+## Using Async with File I/O
+Python by default handles files one at a time, making the program wait until the task is done. But async can also be used for file operations. While writing and reading files, we can simulated async behavior using asyncio.sleep() to represent delays, similar to real-world scenarios where I/O operations take time.
+
+### Example code:
+import asyncio
+import aiofiles
+import asyncio
+
+async def write():
+  async with aiofiles.open(r"paste_your_file_path_here\file.txt", "w") as f:
+    await f.write("Hello from Geeks for Geeks!")
+
+async def read():
+  async with aiofiles.open(r"paste_your_file_path_here\files.txt","r") as f:
+    print(await f.read())
+asyncio.run(write())
+asyncio.run(read())
+
+### Output:
+Hello from Geeks for Geeks!
+
+Explanation:
+- write_file() writes data to "file.txt" if it already exists in the specified path. If the file doesn't exist, it automatically creates a new "file.txt" and writes data to it.
+- read_file() opens "file.txt" in read mode and prints its content asynchronously. If the file doesn't exist, it will raise a FileNotFoundError.
+- asyncio.run(write()) runs first, making sure the file is created and written. Then asyncio.run(read()) runs, reading and printing the content.
+  
