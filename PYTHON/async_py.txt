@@ -1,0 +1,14 @@
+## Python async
+
+'async' keyword in Python is used to define asynchronous functions, which allow tasks to run without blocking the execution of other code.
+It is commonly used for handling tasks l.ike network requests, database operatoins or file I/O, where waiting for one task to finish would normally slow down the entire program.
+Async relies on 'await' because an async function does not execute asynchronously on its own, it needs await to actually pause and resume tasks.
+
+To use async in our code, we need to first import the asyncio library.
+
+import asyncio
+async def func():
+  print("Hello")
+  await asyncio.sleep(2) # Pause for 2 second without blocking
+  print("Geeks for Geeks")
+asyncio.run(func())
