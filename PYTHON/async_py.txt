@@ -12,3 +12,45 @@ async def func():
   await asyncio.sleep(2) # Pause for 2 second without blocking
   print("Geeks for Geeks")
 asyncio.run(func())
+
+## Output:
+Hello!
+Geeks for Geeks
+
+## Explanation:
+- "async" keyword before "def" keyword defines the function func as an asynchronous function.
+- "await asyncio.sleep(2)" makes it wait for 2 second before continuing.
+- that's why when the function is called using "asyncio.run(func())", the second print statement gets executed after the delay of 2 seconds.
+
+## Syntax:
+async def function_name():
+  await some_async_function()
+
+- async def: defines as asynchronous function.
+- await: pauses execution until the awaited function completes.
+
+## Run Multiple Tasks Simultaneously
+With the help of async, multiple tasks can run without waiting for one to finish before starting another.
+
+### code
+import asyncio
+async def task1():
+  print("Task 1 started")
+  await asyncio.sleep(3)
+  print("Task 1 finished")
+
+async def task2():
+  print("Task 2 started")
+  await asyncio.sleep(1)
+  print("Task 2 finshed")
+
+async def main:
+  await asyncio.gather(task1(), task2()) # Runs both tasks together
+
+asyncio.run(main())
+
+### Output:
+Task 1 started
+Task 2 started
+Task 2 finished
+Task 1 finished
