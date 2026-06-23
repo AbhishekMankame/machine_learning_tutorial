@@ -54,3 +54,37 @@ Task 1 started
 Task 2 started
 Task 2 finished
 Task 1 finished
+
+### Explanation:
+- in this code, task1() and task2() run at the same time because then are defined as async function.
+- task2() completes first because it waits for only 1 second, while task1() waits for 3 seconds.
+
+## Using Async with HTTPS Requests
+It's a very common practice to use async keyword with HTTP requests, if we fetch data from multiple URLs using a synchronous approach, each request blocks the execution until it completes. However, with async, we can send multiple requests simultaneously, making the program much faster.
+
+## Code:
+import aiohttp
+import asyncio
+async def func():
+  async with aiohttp.ClientSession() as session:
+    aync with session.get("https://example.com/") as res:
+      data = await res.text()
+      print(data[:100]) # Prints first 100 characters
+asyncio.run(func())
+
+### Output:
+<!doctype html>
+<html>
+<head>
+  <title> Example Domain</title>
+  <meta charset = "utf-8" />
+  <m
+
+### Explanation:
+In this code we have defined an asynchronous function that performs an HTTP request using the async keyword, the breakdown of code is such:
+- aiohttp library is used for making async HTTP requests.
+- aiohttp.ClientSession(), creates HTTP session and making an asynchronous get request using session.get()
+- await keyword ensures that the request completes before proceeding to the next step.
+- data[:100] ensure that only first 100 characters are printed.
+
+### Note: Ensures that "aiohttp" library is installed on your system before running the code. If it's not installed, you can add it by running "pip install aiohttp" command in the terminal.
