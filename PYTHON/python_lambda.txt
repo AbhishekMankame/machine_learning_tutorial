@@ -1,0 +1,16 @@
+## Python Lambda Functions
+
+Lambda functions are small anonymous functions, meaning they do not have a defined name. These are small, short-lived functions used to pass simple logic to another function.
+- Contains only one expression
+- Result of that expression is returned automatically (no return keyword needed).
+
+In this example, a lambda function is defined to convert a string to its upper case using upper().
+
+a = 'GeeksforGeeks'
+upper = lambda x: x.upper()
+print(upper(a))
+
+### Explanation:
+- 'a' store the string 'GeeksforGeeks'
+- upper is a lambda function that takes an arguement x and returns x.upper()
+- upper(a) applies the lambda to a, converting it to uppercase.
