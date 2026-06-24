@@ -14,3 +14,25 @@ print(upper(a))
 - 'a' store the string 'GeeksforGeeks'
 - upper is a lambda function that takes an arguement x and returns x.upper()
 - upper(a) applies the lambda to a, converting it to uppercase.
+
+### Syntax:
+a = lambda x : x**2
+Here a --> Function Name
+lambda --> Lambda Keyword
+x --> Arguement 
+x**2 --> Expression
+
+- Function name (a): stores the lambda function so it can be reused later.
+- Lambda keyword (lambda): defines an anonymous (inline) function.
+- Arguement(x): input value passed to the lambda function
+- Expression(x**2): operation performed on the arguement and returned as the result.
+
+### Use Cases
+1. Conditional Checking: lambda function can use conditional expresion (if-else) to return different results based on a condition.
+
+check = lambda x: "Positive" if x > 0 else "Negative" if x < 0 else "Zero"
+print(check(5))   
+print(check(-3))  
+print(check(0))
+
+Explanation: lambda function takes x as input. It uses nested if-else statements to return "Positive", "Negative" or "Zero".
