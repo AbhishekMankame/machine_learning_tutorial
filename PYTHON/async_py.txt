@@ -114,4 +114,3 @@ Explanation:
 - write_file() writes data to "file.txt" if it already exists in the specified path. If the file doesn't exist, it automatically creates a new "file.txt" and writes data to it.
 - read_file() opens "file.txt" in read mode and prints its content asynchronously. If the file doesn't exist, it will raise a FileNotFoundError.
 - asyncio.run(write()) runs first, making sure the file is created and written. Then asyncio.run(read()) runs, reading and printing the content.
-  
