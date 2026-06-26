@@ -35,4 +35,4 @@ print(check(5))
 print(check(-3))  
 print(check(0))
 
-Explanation: lambda function takes x as input. It uses nested if-else statements to return "Positive", "Negative" or "Zero".
+### Explanation: lambda function takes x as input. It uses nested if-else statements to return "Positive", "Negative" or "Zero".
