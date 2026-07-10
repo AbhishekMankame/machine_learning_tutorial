@@ -79,3 +79,22 @@ Example: Let's assume we have a file named geek.txt that contains text "Hello, W
 with open("geek.txt","r") as file:
   content = file.read()
   print(content)
+
+## Handling Exceptions When Closing a File
+It's important to handle exceptions to ensure that files are closed properly, even if an error occurs during file operations. Here, the finally block ensures the file is closed even if an error occurs.
+
+try:
+  file = open("geek.txt", "r")
+  content = file.read()
+  print(content)
+except FileNotFoundError as e:
+  print("Error: ", e)
+finally:
+  file.close()
+
+### Output: Hello, World!
+
+## Explanation:
+- try block contains code that may raise an error.
+- except block handles specific errors like missing files.
+- finally block ensures the file is always closed, even if an error occurs.
