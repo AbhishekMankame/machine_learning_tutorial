@@ -42,3 +42,40 @@ print("Is Close? ",f.closed)
 - f.name: Retunrs the name of the file that was opened (in this case, "geek.txt")
 - f.mode: Tells us the mode in which the file was opened. Here, it's 'r' which means read mode.
 - f.closed: Returns a boolean value - False when file is currently open otherwise True.
+
+## Reading a File
+Reading a file can be achieved by file.read() which reads the entire content of the file. After reading, it's good practice to close the file to free up system resources.
+
+Example: Reading a File in Read Mode (r)
+file = open("geek.txt","r")
+content = file.read()
+print(content)
+file.close()
+
+## Writing a File
+Writing to a file is done using the mode "w". This creates a new file if doesn't exist, or overwrites the existing file if it does. The write() method is used to add content. After writing, make sure to close the file.
+
+Example: Writing to a file (overwrites if file exists)
+
+with open("geek.txt","w") as file:
+  file.write("Hello, Python!\n")
+  file.write("File handling is easy with Python.")
+print("File written successfully")
+
+### Output:
+Hello, Python!
+File handling is easy with Python.
+
+### Explanation:
+- "w" mode opens the file for writing (overwrites existing content if the file already exists).
+- write() method adds new text to the file.
+- When using with, the file closes automatically at the end fo the block.
+
+### Using with Statement
+Instead of manually opening and closing the file, you can use the with statement, which automatically handles closing. This reduces the risk of file corruption and resource leakage.
+
+Example: Let's assume we have a file named geek.txt that contains text "Hello, World!".
+
+with open("geek.txt","r") as file:
+  content = file.read()
+  print(content)
