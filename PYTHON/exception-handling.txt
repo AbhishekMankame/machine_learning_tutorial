@@ -1,0 +1,19 @@
+## Python Exception Handling
+Exception Handling allows a program to handle unexpected errors during execution in a controlled way, instead of crashing abruptly.
+It enables programs to detect errors, manage them properly and continue execution wherever possible.
+- Handles runtime errors such as invalid input, file not found, divison by zero and type mismatches that occur during program execution.
+- Helps improve program reliability by ensuring the applicatoin does not terminate unexpectedly when an error occurs.
+
+try block: Contains the code that might fail, like "ans = n/m"
+except: Runs if a specific error (like "ZeroDivisionError") occurs in the "try" block.
+
+## Example:
+n = 10
+try:
+  res = n/0
+except ZeroDivisionError:
+  print("Can't be divided by zero!")
+
+## Output: Can't be divided by zero!
+
+### Explanation: Dividing a number by 0 raises a ZeroDivisionError. The try block contains code that may fail and except block catches the error, printing a safe mesage instead of stopping the program
