@@ -21,3 +21,24 @@ f = open("geek.txt","r")
 print(f)
 
 Explanation: code opens the file 'geek.txt' in read mode. If the file exist, it returns a file object connected to that file; if the file does not exist, Python raises a FileNotFoundError.
+
+## Closing a File
+file.close() method closes the file and releases the system resources. If the file was opened in write or append mode, closing ensures that all changes are properly saved.
+
+file = open("geek.txt","r")
+# Perform file operations
+file.close()
+
+### Checking File Properties
+Once the file is open, we can check some of its properties:
+f = open("geek.txt","r")
+print("Filename: ", f.name)
+print("Mode: ", f.mode)
+print("Is Closed? ",f.closed)
+f.close()
+print("Is Close? ",f.closed)
+
+### Explanation:
+- f.name: Retunrs the name of the file that was opened (in this case, "geek.txt")
+- f.mode: Tells us the mode in which the file was opened. Here, it's 'r' which means read mode.
+- f.closed: Returns a boolean value - False when file is currently open otherwise True.
