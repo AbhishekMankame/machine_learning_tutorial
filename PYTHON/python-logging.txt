@@ -12,3 +12,11 @@ ERROR:root:GFG raised an error
 - import logging: Imports the logging module.
 - name = 'GFG':Stores the string GFG in a variable.
 - logging.error('%s raised an error',name): Logs an error message: "GFG raised an error."
+
+## Python Logging Levels
+There are five built-in levels of log message.
+- Debug: Detailed information for diagnosing problems.
+- Info: Confirms things are working as expected.
+- Warning: Indicates unexpected issues or potential future problems.
+- Error: A serious problem that prevents a function from running.
+- Critical: A severe error that may stop the program from running.
