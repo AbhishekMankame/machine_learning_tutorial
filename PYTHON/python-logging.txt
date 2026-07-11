@@ -1,0 +1,14 @@
+## Logging in Python
+Logging is the proces of keeping a record of what a program is doing while it runs, which helps developers understand program behavior and easily find and fix errors like invalid inputs or system failures.
+
+import logging
+name = 'GFG'
+logging.error('%s raised an error', name)
+
+### Output:
+ERROR:root:GFG raised an error
+
+### Explanation:
+- import logging: Imports the logging module.
+- name = 'GFG':Stores the string GFG in a variable.
+- logging.error('%s raised an error',name): Logs an error message: "GFG raised an error."
