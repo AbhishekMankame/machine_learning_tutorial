@@ -20,3 +20,28 @@ There are five built-in levels of log message.
 - Warning: Indicates unexpected issues or potential future problems.
 - Error: A serious problem that prevents a function from running.
 - Critical: A severe error that may stop the program from running.
+
+### Useful Handlers
+Below are some useful logging handlers in Python that help control where and how log messages are output.
+
+- StreamHandler --> Sends message to streams (file-like objects)
+- FileHandler --> Sends messages to disk files.
+- RotatingFileHnadler --> Sends message to disk files, with support for maximum log file sizes and log file rotation.
+
+### Example:
+import logging
+logger = logging.getLogger("SimpleLogger")
+logger.setLevel(logging.DEUG)
+file_handler = logging.FileHandler("app.log")
+logger.addHandler(file_handler)
+logger.info("This is an info message")
+logger.error("This is an error message")
+
+### Output: The code writes the log messages to the file app.log
+This is an info message
+This is an error message
+
+### Explanation:
+- FileHandler("app.log"): Sends log messages to the file app.log.
+- logger.addHandler(file_handler): Attaches the handler to the logger.
+- logger.info() and logger.error(): Writes messages of different types of importance to the file.
