@@ -64,5 +64,35 @@ for d, label in neighbors:
   votes[label] = votes.get(label, 0) + 1
 
 prediction = max(votes, key=votes.get)
-
 print("Prediction:", prediction)
+
+
+### Python Code Using Scikit-learn
+from sklearn.neighbors import KNeighborsClassifier
+#### Features
+X = [
+    [170,65],
+    [175,70],
+    [160,55],
+    [180,90],
+    [185,95]
+]
+
+#### Labels
+y = [
+    "Fit",
+    "Fit",
+    "Fit",
+    "Not Fit",
+    "Not Fit"
+]
+
+#### Create model
+model = KNeighborsClassifier(n_neighbors=3)
+
+#### Train model
+model.fit(X,y)
+
+#### Prediction
+prediction = model.predict([[178, 75]])
+print(prediction)
