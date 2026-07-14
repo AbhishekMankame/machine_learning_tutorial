@@ -8,3 +8,30 @@ It works by finding the K closest data points (neighbors) to a new data point an
 
 ### Definition
 K-Nearest Neighbors (KNN) is a non-parametric, instance-based (lazy learning) algorithm that classifies or predicts a value based on the majority class (classification) or average value (regression) of the K nearest training examples.
+
+### Why it is called "Lazy Learning"?
+Unline algorithms like Decision Trees or Neural Networks, KNN does not build a model during training.
+Instead:
+- It simply stores the training data.
+- When a new sample arrives, it calculates the distance to every stored sample.
+- It predicts using the nearest neighbors.
+
+### Distance Metrics
+1. Euclidean Distance ---> d = sqrt((x2-x1)^2 + (y2-y1)^2)
+2. Manhattan Distance ---> |x2 - x1| + |y2 - y1|
+
+### Choosing K
+Small K: K=1
+Advantages:
+- Learns complex patterns
+Disadvantages:
+- Sensitive to noise
+- Can overfit
+
+Large K: K = 15
+Advantages:
+- Stable
+- Less affected by noise
+- Misses local patterns
+
+A common starting point is: K==sqrt(N), where N is the number of training sample
