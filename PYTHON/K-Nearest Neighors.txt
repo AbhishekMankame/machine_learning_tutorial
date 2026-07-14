@@ -35,3 +35,34 @@ Advantages:
 - Misses local patterns
 
 A common starting point is: K==sqrt(N), where N is the number of training sample
+
+### Python Code (Without Library)
+
+import math 
+training_data = [
+    ([170, 65], "Fit"),
+    ([175, 70], "Fit"),
+    ([160, 55], "Fit"),
+    ([180, 90], "Not Fit"),
+    ([185, 95], "Not Fit")
+]
+new_point = [178, 75]
+k = 3
+distances = []
+
+for point, label in training_data:
+  distance = math.sqrt(
+    (point[0]-new_point[0])**2 + (point[1]-new_point[1])**2
+  )
+  distances.append((distance, label))
+
+distances.sort()
+neighbors = distances[:k]
+votes = {}
+
+for d, label in neighbors:
+  votes[label] = votes.get(label, 0) + 1
+
+prediction = max(votes, key=votes.get)
+
+print("Prediction:", prediction)
