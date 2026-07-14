@@ -96,3 +96,38 @@ model.fit(X,y)
 #### Prediction
 prediction = model.predict([[178, 75]])
 print(prediction)
+
+### Advantages:
+- Very simple to understand and implement
+- No training phase (lazy learning)
+- Can solve both classification and regression problems
+- Works well with small datasets
+- Can model complex decision boundaries
+
+### Disadvantages
+- Slow predictions for large datasets because it compares the new point with all training samples.
+- Requires lot of memory to store the training data.
+- Sensitive to irrelevant features.
+- Sensitive to different feature scales (feature scaling is usually needed).
+- Performance decreases in high-dimensional data (the "curse of dimensionality").
+
+### Applications
+- Image classification
+- Handwriting recognition
+- Recommendation systems
+- Medical diagnosis
+- Credit risk analysis
+- Fraud detection
+- Face recognition
+- Customer segmentation
+
+### Time Complexityu:
+Let:
+    N = Number of training samples
+    D = Number of features
+
+Training --> O(1) stores the data
+Distance calculation --> O(N*D)
+Sorting distances --> O(N log N)
+Prediction --> Approximately O(N*D) (or O(N log N) if sorting is used)
+
