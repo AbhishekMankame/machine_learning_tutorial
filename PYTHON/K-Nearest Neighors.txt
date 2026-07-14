@@ -131,3 +131,14 @@ Distance calculation --> O(N*D)
 Sorting distances --> O(N log N)
 Prediction --> Approximately O(N*D) (or O(N log N) if sorting is used)
 
+### Summary
+Feature: K-NN
+Learning Type: Supervised
+Algorithm Type: Lazy Learning
+Uses Training Phase: No (stores data only)
+Tasks: Classification and Regression
+Prediction Method: Majority vote (classification)/ Average(regression)
+Distance Measures: Euclidean, Manhattan, Minkowski, Hamming
+Sensitive to Feature Scaling: Yes
+Main Hyperparameter: K (number of neighbors)
+Best for: Small to medium-sized datasets with meaniningful distance relationships
