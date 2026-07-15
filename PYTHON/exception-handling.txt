@@ -1,4 +1,5 @@
 ## Python Exception Handling
+
 Exception Handling allows a program to handle unexpected errors during execution in a controlled way, instead of crashing abruptly.
 It enables programs to detect errors, manage them properly and continue execution wherever possible.
 - Handles runtime errors such as invalid input, file not found, divison by zero and type mismatches that occur during program execution.
