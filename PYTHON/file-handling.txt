@@ -1,4 +1,5 @@
 ## File Handling in Python
+
 File handling refers to the process of performing operations on a file, such as creating, opening, reading, writing and closing it through a programming interface.
 It involves managing the data flow between the program and the file system on the storage device, ensuring that data is handled safely and efficiently.
 
@@ -93,7 +94,6 @@ finally:
   file.close()
 
 ### Output: Hello, World!
-
 ## Explanation:
 - try block contains code that may raise an error.
 - except block handles specific errors like missing files.
