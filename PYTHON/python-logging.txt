@@ -1,4 +1,5 @@
 ## Logging in Python
+
 Logging is the proces of keeping a record of what a program is doing while it runs, which helps developers understand program behavior and easily find and fix errors like invalid inputs or system failures.
 
 import logging
