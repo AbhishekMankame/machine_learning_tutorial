@@ -1,0 +1,18 @@
+## Data Science interview questions
+
+What is the Data Science Lifecycle?
+The data science lifecycle is the step-by-step process followed to solve a problem using data.
+1. Problem Definition: Understanding the business problem and defining goal.
+2. Data Collection: Gathering data from database. APIs files, or web scraping.
+3. Data Cleaning & Preprocessing: Handling missing values, duplicates, and inconsistent formats.
+4. Exploratory Data Analysis (EDA): Understanding patterns and relationships using statistics and visualization.
+5. Feature Engineering: Creating or transforming variables to imporve model performance.
+6. Model Building: Applying ML or statistical models to the data.
+7. Model Evaluation: Testing performance using appropriate metrics.
+8. Deployment: Putting the model into production.
+9. Monitoring & Maintenance: Tracking model performance over time and retraining when needed.
+
+What is the difference between a List and a Tuple in Python?
+Lists and Tuples are both ordered collections in Python, but they differ in mutability and use case:
+List: Mutable - elements can be added, removed or changed after creating. Defined using square brackets: [1,2,3]
+Tuple: Immutable - once created, elements canno be changed. Defined using parenthesis: (1,2,3)
