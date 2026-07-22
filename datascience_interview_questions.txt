@@ -16,3 +16,29 @@ What is the difference between a List and a Tuple in Python?
 Lists and Tuples are both ordered collections in Python, but they differ in mutability and use case:
 List: Mutable - elements can be added, removed or changed after creating. Defined using square brackets: [1,2,3]
 Tuple: Immutable - once created, elements canno be changed. Defined using parenthesis: (1,2,3)
+
+What are Window Functions and how do they differ from Aggregate Functions?
+A window function performs a calculations across a set of rows related to the current window defined by an OVER() clause without collapsing those rows into a single output.
+This is the key distinction from regular aggregate functions.
+- Aggregate funtion: Collapses multiple rows into one summary row per group.
+- Window function: Keeps every original row intact while still computing the aggregate value relative to a "window" or related rows.
+Example: SUM() with GROUP BY is aggregate function and SUM() OVER(PARTITION BY) is window function.
+
+What is the difference between a JOIN and a SUBQUERY, and when would you use each?
+- JOIN: Combines columns from two or more tables into a single result set based on a related column, evaluated together by the query optimizer. Generally more efficient for retrieving combined data from multiple tables, especially with proper indexing.
+- SUBQUERY: A query is nested inside another query (in WHERE, SELECT, or FROM), used to compute an intermediate value or filter condition that the outer query then uses.
+
+When to use JOIN: When you need actual columns from multiple tables combined into one output.
+Eg: "List all orders along with customer names."
+
+When to use SUBQUERY: When you only need a value or set of values to filter the outer query, not the underlying table's columns.
+Eg: "Find customers who spent more than the average order amount."
+
+What is a CTE (Common Table Expression) and how is it different from a Subquery?
+A CTE is a temporary, named result set defined using the WITH clause, which exists only for the duration of the query.
+It behaves like a subquery but with better readability and additional capabilities.
+
+Key advantages over subqueries:
+- Readability: Breaking a complex query into named, logical steps makes it far easier to read and debug than deeply nested subqueries.
+- Reusability: A CTE can be referenced multiple times within the same query, whereas a subquery must be rewritten each time.
+- Recursion: CTEs support recursive queries (using WITH RECURSIVE), which subqueries cannot do - essential for traversing hierarchical data like an organizational chart or a category tree.
